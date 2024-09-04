@@ -1,0 +1,316 @@
+/* Clear all the formats standard format bacause I will create my own */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body attributes will be standards for every page*/
+body {
+    background: #d2d2c1 url('pics/background.png');
+    font: 25px, Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+/* principal id is going to be the same id for every page*/
+#header {
+    border: hidden;
+    width: 100%;
+    padding: 10px;
+}
+/* menu id for the header of the website in every page */
+#menu {
+    background: #c5c5b2;
+    padding: 20px;
+    color: black;
+    text-align: center;
+}
+#menu a {
+    font-weight: bold;
+    color: black;
+    margin: 10px 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1em;
+    padding: 5px 5px;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    background: none;
+    border-radius: 2px;
+}
+
+/* class for the front page picture used in every page */
+.homepagepic {
+    width: 100%;
+    height: 250px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+}
+
+form {
+    width: 100%;
+    background: #d7d7bf;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px whitesmoke;
+    max-width: 600px;
+    margin: 20px auto;
+}
+.form-group{
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: inline-block;
+    margin-bottom: 5px;
+    padding-left: 15px;  
+}
+.form-group1 label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group select, .form-group textarea {
+    width: 25%;
+    padding: 10px;
+    margin-top: 3px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+form p {
+    font-size: 1em;
+    color: black;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: calc(100% - 50px); /* Adjust to consider padding */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background: #6d6c6c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 8px;
+}
+#textImg {
+    width: 100%;
+    line-height: 1.5;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; 
+}
+#textContent {
+    width: 800px;
+    float: left;
+    padding: 10px;
+    padding-top: 28px;
+    padding-left: 30px;
+}
+#textContent p {
+    line-height: 1.8;
+}
+#imgContent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+} 
+.img-box {
+    background-color: rgb(222, 219, 219);
+    border-radius: 10px;
+    box-shadow: rgb(17, 14, 14);
+    overflow: hidden;
+    width: 320px; /* Set a fixed width for consistency */
+    text-align: center;
+    margin-top: 5px;
+    padding: 10px;
+    margin-left: 70px;
+}
+.img-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.img-box p {
+    margin: 10px 0;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+}
+
+.contactContainer {
+  display: flex; 
+    justify-content: center; /* Center child horizontally */
+    align-items: center; 
+}
+#contactContent {
+    width: 100%;
+    max-width: 700px;
+    padding: 15px;
+    border-radius: 10px;
+}
+#contactContent p {
+    padding-top: 30px;
+    text-align: center;
+}
+#contact-info {
+    margin: 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    border: none;  
+}
+#contact-info p {
+    margin: auto;
+    font-size: 15px;
+}
+
+.info-section {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #d7d7bf;
+    border: 5px double #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgb(222, 219, 219);
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+.info-section img{
+    width: 40px; /* Adjust the width as needed */
+    height: auto;
+    margin-right: 10px; /* Space between the image and text */
+}
+.info-section h3 {
+    margin-bottom: 5px;
+    color: #555;
+    padding-bottom: 5px;
+}
+
+.info-section p {
+    margin: 10px 10px 10px 10px;
+    padding: 10px;
+    line-height: 1.6;
+    color: #555;
+}
+.info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+h1, h2 {
+    color: #0d0c0c;
+    margin: 10px 10px;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.3em;
+    padding: 30px; 
+    text-align: center;   
+}
+p {
+    font-family: 'Georgia', serif;
+    font-size: 1em;
+    color: black;
+    margin-bottom: 20px;
+    text-align: justify;    
+}
+
+#destination {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); /* It makes the columns not change*/
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.destination-galery {
+    flex: 1 1 calc(33.333% - 40px); /* Flexible basis for 3 columns (grid)*/
+    max-width: 300px;
+    box-sizing: border-box;
+    background-color: rgb(222, 219, 219);
+    border: 2px dotted rgb(255, 255, 255);
+    padding: 10px;
+    margin: 10px;
+    margin-left: 70px;
+    border-radius: 15px;
+    box-shadow: rgb(19, 19, 18);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.destination-galery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.destination-galery h2 {
+    margin-top: 10px;
+    font-size: 1.3em;
+}
+.destination-galery p {
+    margin: 10px 0;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: underline;
+}
+.destination-galery ul {
+    padding: 10px;
+    margin: 10px;
+    flex-grow: 1;
+}
+.destination-galery li {
+    margin-bottom: 7px;
+}
+.destination-galery a {
+    padding: 10px;
+    margin: 10px;
+   text-align: center;
+}
+.link-box {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: rgb(158, 158, 144);
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1);
+    
+}
+.link-box:hover {
+    background-color: whitesmoke;
+}
+.centralizar {
+    text-align: center;
+}
+.clear {
+    /* clear the float when necessary */
+    clear: both;
+}
+#bottom {
+    background: #c5c5b2;
+    clear: both;
+    padding: 15px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
