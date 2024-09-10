@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lopes Travel Guide - Homepage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/CSS/style.css">
+    <script src="/JavaScript/validation.js"></script>
+
+</head>
+
+<body>
+
+    <div id="header" class="centralizar">
+        <img src="/Pictures/frontpage.jpeg" class="homepagepic" alt="Frontpage">
+        <div id="menu">
+            <a href="index.html">Home</a> |
+            <a href="destination.html">Best Seller Destinations</a> |
+            <a href="customizeDestination.html">Build your own Destination</a> |
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <h1>On the Lopes Travel Guide you can make your own trip</h1>
+    </div>
+
+    <div id="textImg">
+        <div id="textContent">
+            <form onsubmit="return validateForm()">
+                <h3>Personal Information</h3><br>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Nayara" required>
+
+                <br><label for="lastName">Last Name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Lopes" required>
+
+                <br><label for="phoneNum">Phone Number:</label>
+                <label>+353</label>
+                <input type="text" id="phoneNum" name="phoneNum" placeholder="879284410" required><br>
+                <label for="email">Email Address:</label>
+                <input type="email" id="emailAddr" name="emailAddr" placeholder="lopesnayara@hotmail.br"
+                    required><br><br>
+                <!-- Questions to be asked on the form in order to build a profile of the user -->
+                <hr><br>
+                
+                <h3>Trip Information</h3><br>
+                <div class="form-group">
+                    <p>Season:</p>
+                    <label><input type="radio" name="season" value="W">Winter</label>
+                    <label><input type="radio" name="season" value="S">Spring</label>
+                    <label><input type="radio" name="season" value="Sum">Summer</label>
+                    <label><input type="radio" name="season" value="Au">Autumn</label>
+                </div>
+                <br>
+                <div class="form-group1">
+                    <p>Interests:</p>
+                    <label><input type="radio" name="interets">Gastronomic Tour</label>
+                    <label><input type="radio" name="interets">Alcoholic Experience</label>
+                    <label><input type="radio" name="interets">Art, Theatre & Music</label>
+                    <label><input type="radio" name="interets">Nature & Outdoors</label>
+                    <label><input type="radio" name="interets">Yoga, Pilates & Heiki</label>
+                    <br>
+                </div>
+                <br>
+                <div class="form-group">
+                    <p>Accomodation:</p>
+                    <label><input type="radio" name="accomodation">Nature</label>
+                    <label><input type="radio" name="accomodation">Design</label>
+                    <label><input type="radio" name="accomodation">Budget</label>
+                    <label><input type="radio" name="accomodation">Cruise</label>
+                    <label><input type="radio" name="accomodation">Luxury</label>
+                    <br>
+                </div>
+                <p>How many days would you like to stay:</p>
+                <div class="form-group">
+                    <select name="days">
+                        <option value="3">3 days</option>
+                        <option value="5">5 days</option>
+                        <option value="7">7 days</option>
+                        <option value="10">10 days</option>
+                        <option value="15">15 days</option>
+                        <option value="16"> + 15 days</option>
+                    </select>
+                </div><br>
+                <p>Comments:<br>
+                    <textarea></textarea>
+                </p>
+                <hr>
+                <!-- check box allows the user the choose more, and it is necessary for ethical e legal issue (GDPR) -->
+                <br>
+                <h3>Terms and Agreement</h3><br>
+                <input type="checkbox" name="terms1" required>Please, tick the box if you agree that your data will be
+                secure with the website.<br>
+                <input type="checkbox" name="terms2" required>Please, tick the box to acknowledge that your data will
+                NOT be shared with our partners.<br>
+                <input type="checkbox" name="terms3" required>Please, tick the box to acknowledge that your data can be
+                requested by you at any time.<br>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div id="imgContent">
+            <div class="img-box">
+                <img src="/Pictures/dublinIreland.jpg" alt="Dublin - Ireland 2022">
+                <p>Dublin - Ireland 2022</p>
+            </div>
+            <div class="img-box">
+                <img src="/Pictures/spainIbiza.jpg" alt="Ibiza - Spain 2023">
+                <p>Ibiza - Spain 2023</p>
+            </div>
+            <div class="img-box">
+                <img src="/Pictures/germanyBerlin.jpg" alt="Berlin - Germany 2024">
+                <p>Berlin - Germany 2024</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- div with a class to clear the float style (otherwise the text and img would be in order) -->
+    <div class="clear"><br>
+    </div>
+
+    <div id="bottom">
+        <p class="centralizar">All rights reserved.<br>
+            Images are from the Owner - Copyrights 2024</p>
+    </div>
+</body>
+</html>
