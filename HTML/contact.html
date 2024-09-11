@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lopes Travel Guide - Contact</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/CSS/style.css">
+    <script src="/JavaScript/validation.js"></script>
+</head>
+
+<body>
+    <div id="header" class="centralizar">
+        <img src="/Pictures/frontpage.jpeg" class="homepagepic" alt="Frontpage">
+        <div id="menu">
+            <a href="index.html">Home</a> |
+            <a href="destination.html">Best Seller Destinations</a> |
+            <a href="customizeDestination.html">Build your own Destination</a> |
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
+
+    <div id="textImg" class="contactContainer">
+        <div id="contactContent" class="centralizar">
+            <form onsubmit="return validateForm()">
+                <h1>Contact Us</h1>
+                <p>Please, send us a message and we are going to get back to you as soon as possible.</p>
+                <br>
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="emailAddr" name="emailAddr" placeholder="lopesnayara@hotmail.br" required><br>
+                Subject: <br>
+                <input type="text" name="subject"><br>
+                Message: <br>
+                <textarea></textarea><br>
+                <input type="submit" name="Submit">
+            </form>
+            <div id="contact-info">
+                <div class="info-container"></div>
+                <div class="info-section">
+                    <img src="/Pictures/phone-call.png">
+                    <p>Information:</p>
+                    <p>Email Address: lopes@travelguide.com</p>
+                    <p>Phone Number: +353 029 082 7263 </p>
+                    <p>Fax Number: 02973819 </p>
+                </div>
+                <br>
+                <div class="info-section">
+                    <img src="/Pictures/bullhorn.png">
+                    <p>Social Media:</p>
+                    <p>FaceB.: lopes_travel</p>
+                    <p>GetAwayTravelling: lopes_travel_guide</p>
+                    <p> VideosMakers: lopes_travel</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- div with a class to clear the float style (otherwise the text and img would be in order) -->
+    <div class="clear">
+        <br>
+    </div>
+    <div id="bottom">
+        <p class="centralizar">All rights reserved.<br>
+            Images are from the Owner - Copyrights 2024</p>
+    </div>
+</body>
+</html>
